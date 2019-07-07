@@ -160,17 +160,17 @@ namespace OVLinkedList
                         LinkedListNode<T> newIter = null;
                         if (Iter == List.First)
                         {
-                            //first
+                            //in beginning
                             newIter = Iter.Next;
                         }
                         else if (Iter == List.Last)
                         {
-                            // last
+                            //in end
                             newIter = Iter.Previous;
                         }
                         else
                         {
-                            // middle
+                            //in middle
                             newIter = Iter.Next;
                         }
                         List.Remove(Iter);

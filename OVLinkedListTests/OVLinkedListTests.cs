@@ -229,18 +229,23 @@ namespace OVLinkedList.Tests
             OVLinkedList<int> list = new OVLinkedList<int>();
 
             int[] n0 = list.ToArray();
-            CollectionAssert.AreEqual(new int[0]{ }, n0);
+            CollectionAssert.AreEqual(new int[0] { }, n0);
 
             list.Enqueue(1);
             list.Enqueue(2);
             list.Enqueue(3);
             list.Enqueue(4);
 
-            bool b1 = list.TryGetNext(out int n1);
-            Assert.AreEqual(true, b1);
-            Assert.AreEqual(2, n1);
+            int[] n1 = list.ToArray();
+            CollectionAssert.AreEqual(new int[4] { 1, 2, 3, 4 }, n1);
 
+            bool b2 = list.TryDequeue(out int n2);
+            Assert.AreEqual(true, b2);
+            Assert.AreEqual(1, n2);
 
+            int[] n3 = list.ToArray();
+            CollectionAssert.AreEqual(new int[3] { 2, 3, 4}, n3);
         }
+
     }
 }
