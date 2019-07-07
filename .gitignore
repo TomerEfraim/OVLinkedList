@@ -1,3 +1,9 @@
 *.dll
 *.pdb
 *.cache
+*.suo
+*.csproj.FileListAbsolute.txt
+*.ide-shm
+*.ide-wal
+*.csproj.AssemblyReference.cache
+*.csproj.CoreCompileInputs.cache
