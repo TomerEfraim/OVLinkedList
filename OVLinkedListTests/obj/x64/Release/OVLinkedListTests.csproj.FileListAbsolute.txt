@@ -1,0 +1,16 @@
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\OVLinkedListTests.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\OVLinkedListTests.pdb
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\OVLinkedList.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\OVLinkedList.pdb
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\bin\x64\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\obj\x64\Release\OVLinkedListTests.csprojAssemblyReference.cache
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\obj\x64\Release\OVLinkedListTests.csproj.CoreCompileInputs.cache
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\obj\x64\Release\OVLinkedListTests.csproj.CopyComplete
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\obj\x64\Release\OVLinkedListTests.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedListTests\obj\x64\Release\OVLinkedListTests.pdb

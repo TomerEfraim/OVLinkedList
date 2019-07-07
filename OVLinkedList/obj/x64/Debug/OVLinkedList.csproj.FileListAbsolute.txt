@@ -1,0 +1,6 @@
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedList\bin\x64\Debug\OVLinkedList.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedList\bin\x64\Debug\OVLinkedList.pdb
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedList\obj\x64\Debug\OVLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedList\obj\x64\Debug\OVLinkedList.dll
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedList\obj\x64\Debug\OVLinkedList.pdb
+C:\Users\Tomer\source\repos\OVLinkedList\OVLinkedList\obj\x64\Debug\OVLinkedList.csprojAssemblyReference.cache
