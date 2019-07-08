@@ -217,5 +217,23 @@ namespace OVLinkedList
                 return List.ToArray();
             }
         }
+
+        public virtual void ResetCurrent()
+        {
+            lock (Lock)
+            {
+                try
+                {
+                    if (List.Count > 0)
+                    {
+                        Iter = List.First;
+                    }
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+        }
     }
 }

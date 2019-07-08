@@ -247,5 +247,52 @@ namespace OVLinkedList.Tests
             CollectionAssert.AreEqual(new int[3] { 2, 3, 4}, n3);
         }
 
+        [TestMethod]
+        public void Test6()
+        {
+            OVLinkedList<int> list = new OVLinkedList<int>();
+
+            list.ResetCurrent();
+
+            bool b0 = list.TryGetCurrent(out int n0);
+            Assert.AreEqual(false, b0);
+            Assert.AreEqual(0, n0);
+
+            list.Enqueue(1);
+            list.Enqueue(2);
+            list.Enqueue(3);
+
+            bool b1 = list.TryGetNext(out int n1);
+            Assert.AreEqual(true, b1);
+            Assert.AreEqual(2, n1);
+
+            bool b2 = list.TryGetNext(out int n2);
+            Assert.AreEqual(true, b2);
+            Assert.AreEqual(3, n2);
+
+            bool b3 = list.TryGetNext(out int n3);
+            Assert.AreEqual(false, b3);
+            Assert.AreEqual(0, n3);
+
+            list.ResetCurrent();
+
+            bool b4 = list.TryGetCurrent(out int n4);
+            Assert.AreEqual(true, b4);
+            Assert.AreEqual(1, n4);
+
+            list.ResetCurrent();
+
+            bool b5 = list.TryGetCurrent(out int n5);
+            Assert.AreEqual(true, b5);
+            Assert.AreEqual(1, n5);
+
+            list.TryDequeue(out int n6);
+
+            list.ResetCurrent();
+
+            bool b7 = list.TryGetCurrent(out int n7);
+            Assert.AreEqual(true, b7);
+            Assert.AreEqual(2, n7);
+        }
     }
 }
