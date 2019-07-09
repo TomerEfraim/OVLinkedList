@@ -235,5 +235,10 @@ namespace OVLinkedList
                 }
             }
         }
+
+        public virtual LinkedList<T>.Enumerator GetEnumerator()
+        {
+            return List.GetEnumerator();
+        }
     }
 }

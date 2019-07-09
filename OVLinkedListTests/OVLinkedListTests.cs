@@ -294,5 +294,41 @@ namespace OVLinkedList.Tests
             Assert.AreEqual(true, b7);
             Assert.AreEqual(2, n7);
         }
+
+        [TestMethod]
+        public void Test7()
+        {
+            OVLinkedList<string> list = new OVLinkedList<string>();
+
+            var iterator = list.GetEnumerator();
+
+            bool b0 = iterator.MoveNext();
+            string n0 = iterator.Current;
+            Assert.AreEqual(false, b0);
+            Assert.AreEqual(null, n0);
+
+            list.Enqueue("a");
+            list.Enqueue("b");
+            list.Enqueue("c");
+
+            iterator = list.GetEnumerator();
+
+            bool b1 = iterator.MoveNext();
+            string n1 = iterator.Current;
+            Assert.AreEqual(true, b1);
+            Assert.AreEqual("a", n1);
+
+            bool b2 = iterator.MoveNext();
+            string n2 = iterator.Current;
+            Assert.AreEqual(true, b2);
+            Assert.AreEqual("b", n2);
+
+            bool b3 = iterator.MoveNext();
+            string n3 = iterator.Current;
+            Assert.AreEqual(true, b3);
+            Assert.AreEqual("c", n3);
+
+
+        }
     }
 }
