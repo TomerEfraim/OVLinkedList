@@ -96,7 +96,7 @@ namespace OVLinkedList
             }
         }
 
-        public virtual bool TryGetNext(out T result)
+        public virtual bool TryMoveNext(out T result)
         {
             lock (Lock)
             {
@@ -122,7 +122,7 @@ namespace OVLinkedList
             }
         }
 
-        public virtual bool TryGetPrev(out T result)
+        public virtual bool TryMovePrev(out T result)
         {
             lock (Lock)
             {
