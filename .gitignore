@@ -7,3 +7,4 @@
 *.ide-wal
 *.csproj.AssemblyReference.cache
 *.csproj.CoreCompileInputs.cache
+/.vs/OVLinkedList/v16/Server/sqlite3/storage.ide

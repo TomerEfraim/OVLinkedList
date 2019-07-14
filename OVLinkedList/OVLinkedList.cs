@@ -210,6 +210,34 @@ namespace OVLinkedList
             }
         }
 
+        public virtual bool TryGetFirst(out T result)
+        {
+            lock (Lock)
+            {
+                if (List.First != null)
+                {
+                    result = List.First.Value;
+                    return true;
+                }
+                result = default;
+                return false;
+            }
+        }
+
+        public virtual bool TryGetLast(out T result)
+        {
+            lock (Lock)
+            {
+                if (List.Last != null)
+                {
+                    result = List.Last.Value;
+                    return true;
+                }
+                result = default;
+                return false;
+            }
+        }
+
         public virtual T[] ToArray()
         {
             lock (Lock)

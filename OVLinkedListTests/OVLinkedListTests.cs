@@ -330,5 +330,81 @@ namespace OVLinkedList.Tests
 
 
         }
+
+        [TestMethod]
+        public void Test8()
+        {
+            OVLinkedList<string> list = new OVLinkedList<string>();
+
+            bool b0 = list.TryGetFirst(out string s0);
+            Assert.AreEqual(false, b0);
+            Assert.AreEqual(default, s0);
+
+            list.Enqueue("1");
+            list.Enqueue("2");
+            list.Enqueue("3");
+
+            bool b1 = list.TryGetFirst(out string s1);
+            Assert.AreEqual(true, b1);
+            Assert.AreEqual("1", s1);
+
+            bool b2 = list.TryDequeue(out string s2);
+            Assert.AreEqual(true, b2);
+            Assert.AreEqual("1", s2);
+
+            bool b3 = list.TryGetFirst(out string s3);
+            Assert.AreEqual(true, b3);
+            Assert.AreEqual("2", s3);
+
+            bool b4 = list.TryDequeue(out string s4);
+            Assert.AreEqual(true, b4);
+            Assert.AreEqual("2", s4);
+
+            bool b5 = list.TryDequeue(out string s5);
+            Assert.AreEqual(true, b5);
+            Assert.AreEqual("3", s5);
+
+            bool b6 = list.TryGetFirst(out string s6);
+            Assert.AreEqual(false, b6);
+            Assert.AreEqual(default, s6);
+        }
+
+        [TestMethod]
+        public void Test9()
+        {
+            OVLinkedList<string> list = new OVLinkedList<string>();
+
+            bool b0 = list.TryGetLast(out string s0);
+            Assert.AreEqual(false, b0);
+            Assert.AreEqual(default, s0);
+
+            list.Enqueue("1");
+            list.Enqueue("2");
+            list.Enqueue("3");
+
+            bool b1 = list.TryGetLast(out string s1);
+            Assert.AreEqual(true, b1);
+            Assert.AreEqual("3", s1);
+
+            bool b2 = list.TryDequeue(out string s2);
+            Assert.AreEqual(true, b2);
+            Assert.AreEqual("1", s2);
+
+            bool b3 = list.TryGetLast(out string s3);
+            Assert.AreEqual(true, b3);
+            Assert.AreEqual("3", s3);
+
+            bool b4 = list.TryDequeue(out string s4);
+            Assert.AreEqual(true, b4);
+            Assert.AreEqual("2", s4);
+
+            bool b5 = list.TryDequeue(out string s5);
+            Assert.AreEqual(true, b5);
+            Assert.AreEqual("3", s5);
+
+            bool b6 = list.TryGetLast(out string s6);
+            Assert.AreEqual(false, b6);
+            Assert.AreEqual(default, s6);
+        }
     }
 }
